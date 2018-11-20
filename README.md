@@ -18,5 +18,12 @@
 
 7. If its too complicated, `yarn start:all` will run both servers together
 
+## How to Test it locally:
+
+1. Call `yarn test` to start Karma (important!!! ng cli is using to execute this command, so you should have it installed)
+
+2. Call `yarn start:coverage` to run http-server with test coverage report
+
 ### Based on Angular-Cli v7.0.3
+
 

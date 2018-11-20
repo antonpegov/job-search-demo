@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test --code-coverage",
     "lint": "ng lint",
-    "e2e": "ng e2e",
+    "e2e": "ng e2e --port 4400",
     "postinstall": "node ./ng-add-pug-loader.js",
     "start:app": "ng serve",
     "start:api": "npm start --prefix ./api",

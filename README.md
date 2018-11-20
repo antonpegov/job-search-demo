@@ -24,6 +24,8 @@
 
 2. Call `yarn start:coverage` to run http-server with test coverage report
 
+2. Call `yarn e2e` to run e2e tests with protractor
+
 ### Based on Angular-Cli v7.0.3
 
 

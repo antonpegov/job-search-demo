@@ -1,0 +1,32 @@
+{
+  "cucumberautocomplete.steps": [
+      "e2e/steps/*.ts",
+      "node_modules/qa-lib/src/step_definitions/*.js"
+  ],
+  "cucumberautocomplete.syncfeatures": "e2e/features/*feature",
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.stepsInvariants": true,
+  "cucumberautocomplete.customParameters": [
+      {
+          "parameter":"{ab}",
+          "value":"(a|b)"
+      }
+  ],
+  "cucumberautocomplete.pages": {
+      "users": "e2e/features/pages/users.storage.js",
+      "pathes": "e2e/features/pages/pathes.storage.js",
+      "main": "e2e/features/support/pages/main.page.js"
+  },
+  "cucumberautocomplete.skipDocStringsFormat": true,
+  "cucumberautocomplete.formatConfOverride": {
+      "And": 3,
+      "But": "relative",
+  },
+  "cucumberautocomplete.onTypeFormat": true,
+  "editor.quickSuggestions": {
+      "comments": false,
+      "strings": true,
+      "other": true
+  }
+}

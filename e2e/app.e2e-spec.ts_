@@ -1,10 +1,10 @@
-import { AppPage } from './app.po';
+import { JobsPage } from './pages';
 
 describe('workspace-project App', () => {
-  let page: AppPage;
+  let page: JobsPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new JobsPage();
   });
 
   it('should display welcome message', () => {

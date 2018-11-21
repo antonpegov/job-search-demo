@@ -1,0 +1,95 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Jobs Page",
+    "line": 1,
+    "id": "jobs-page",
+    "tags": [],
+    "uri": "e2e\\features\\JobsPreview.feature",
+    "elements": [
+      {
+        "id": "jobs-page;user-can-see-job-details",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "User can see job details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to jobs page",
+            "match": {
+              "location": "e2e\\steps\\JobsPreview.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4743000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I can see main title",
+            "match": {
+              "location": "e2e\\steps\\JobsPreview.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I can see tooltip in the right panel",
+            "match": {
+              "location": "e2e\\steps\\JobsPreview.steps.ts:21"
+            },
+            "result": {
+              "status": "pending"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I choose second job in the first panel",
+            "match": {
+              "location": "e2e\\steps\\JobsPreview.steps.ts:25"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I see job details in the second panel",
+            "match": {
+              "location": "e2e\\steps\\JobsPreview.steps.ts:29"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

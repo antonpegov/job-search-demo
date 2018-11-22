@@ -1,5 +1,8 @@
-h3.header
-  | Active jobs
-.d-flex
-  app-job-list
-  app-job-info
+.section
+  mat-toolbar.header(color="primary")
+    | Active jobs
+  .row
+    .col-md-6.col-sm-12
+      app-job-list
+    .col-md-6.col-sm-12
+      app-job-info

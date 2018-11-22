@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule, MatCardModule } from '@angular/material';
+import { MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule, MatCardModule, MatToolbarModule } from '@angular/material';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatTooltipModule, MatDialogModule } from '@angular/material';
 
@@ -13,6 +13,7 @@ import { MatTooltipModule, MatDialogModule } from '@angular/material';
     DragDropModule,
     MatTooltipModule,
     MatDialogModule,
+    MatToolbarModule,
  ],
   exports: [
     MatButtonModule,
@@ -23,6 +24,7 @@ import { MatTooltipModule, MatDialogModule } from '@angular/material';
     DragDropModule,
     MatTooltipModule,
     MatDialogModule,
+    MatToolbarModule,
   ],
   declarations: [
   ],

@@ -1,7 +1,7 @@
 {
   "name": "fake-api",
   "version": "0.0.1",
-  "description": "Api with json-serve",
+  "description": "Api with json-server",
   "main": "index.js",
   "author": "Anton Pegov <antonpegov@gmail.com>",
   "license": "MIT",

@@ -1,5 +1,6 @@
+// tslint:disable-next-line:max-line-length
+import { MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule, MatCardModule, MatToolbarModule, MatIconModule } from '@angular/material';
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatFormFieldModule, MatInputModule, MatRippleModule, MatCardModule, MatToolbarModule } from '@angular/material';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatTooltipModule, MatDialogModule } from '@angular/material';
 
@@ -14,6 +15,7 @@ import { MatTooltipModule, MatDialogModule } from '@angular/material';
     MatTooltipModule,
     MatDialogModule,
     MatToolbarModule,
+    MatIconModule,
  ],
   exports: [
     MatButtonModule,
@@ -25,6 +27,7 @@ import { MatTooltipModule, MatDialogModule } from '@angular/material';
     MatTooltipModule,
     MatDialogModule,
     MatToolbarModule,
+    MatIconModule
   ],
   declarations: [
   ],

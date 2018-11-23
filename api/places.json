@@ -1,0 +1,8 @@
+{
+  "errno": 0,
+  "error": "",
+  "body": [
+    {"id": "1", "name": "Berlin"},
+    {"id": "2", "name": "Munich"}
+  ]
+}

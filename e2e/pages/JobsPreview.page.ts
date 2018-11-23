@@ -6,6 +6,6 @@ export class JobsPreviewPage {
   }
 
   getMainHeaderText() {
-    return element(by.css('app-jobs .header')).getText();
+    return element(by.css('app-jobs .header .title')).getText();
   }
 }

@@ -1,8 +1,27 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
 p
   background: grey
 
-// @include media-breakpoint-up(sm) {
-//   .some-class {
-//     display: block;
-//   }
-// }
+.header
+  padding: 0 20px
+  button
+    width: 80px
+    .title
+      display: block
+    .icon
+      display: none
+    // padding: 0 20px
+
+
+.spacer
+  flex: 1 1 auto
+
+
+@include media-breakpoint-down(sm)
+  .header button
+    width: 40px
+    .title
+      display: none
+    .icon
+      display: block

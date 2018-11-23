@@ -1,6 +1,13 @@
 .section
   mat-toolbar.header(color="primary")
-    | Active jobs
+    span.title Active jobs
+    span.spacer
+    button(mat-icon-button)
+      span.title Place
+      mat-icon.icon place
+    button(mat-icon-button)
+      span.title Filter
+      mat-icon.icon filter_list
   .row
     .col-md-6.col-sm-12
       app-job-list

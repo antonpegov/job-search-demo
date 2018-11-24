@@ -1,21 +1,23 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
-p
-  background: grey
-
-.header
-  padding: 0 20px
-  button
-    width: 80px
-    .title
-      display: block
-    .icon
-      display: none
+.jobs
+  // position: absolute;
+  // height: 100%;
+  // width: 100%;
+  &-header
     // padding: 0 20px
-
-
-.spacer
-  flex: 1 1 auto
+    button
+      width: 80px
+      .title
+        display: block
+      .icon
+        display: none
+      // padding: 0 20px
+    .spacer
+      flex: 1 1 auto
+  &-body
+    // height: 100%;
+    background: #eee;
 
 
 @include media-breakpoint-down(sm)

@@ -1,3 +1,25 @@
-<p>
-  | job-info works!
-</p>
+.job-info(*ngIf="ready")
+  .job-info-block
+    .job-info-block-label Title
+    .job-info-block-value {{job.title}}
+  .job-info-block
+    .job-info-block-label Description
+    .job-info-block-value {{job.description}}
+  .job-info-block
+    .job-info-block-label City
+    .job-info-block-value {{job.city}}
+  .job-info-block
+    .job-info-block-label Messages
+    .job-info-block-value total: {{job.counter.messages_total}}, unread: {{job.counter.messages_unread}}
+  .job-info-block
+    .job-info-block-label Categories
+    .job-info-block-value {{categoriesString|async}}
+  .job-info-block
+    .job-info-block-label State
+    .job-info-block-value {{job.state}}
+  .job-info-block
+    .job-info-block-label End date
+    .job-info-block-value {{job.end_date|date}}
+  .job-info-block
+    .job-info-block-label Created at
+    .job-info-block-value {{job.created_at|date}}

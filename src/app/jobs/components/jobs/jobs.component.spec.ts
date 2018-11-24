@@ -4,6 +4,7 @@ import { JobsComponent } from './jobs.component';
 import { JobListComponent } from '../job-list/job-list.component';
 import { JobInfoComponent } from '../job-info/job-info.component';
 import { MaterialModule } from 'src/app/material.module';
+import { JobCardComponent } from '../job-card/job-card.component';
 
 describe('JobsComponent', () => {
   let component: JobsComponent;
@@ -12,7 +13,7 @@ describe('JobsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [MaterialModule],
-      declarations: [ JobsComponent, JobListComponent, JobInfoComponent ]
+      declarations: [ JobsComponent, JobListComponent, JobInfoComponent, JobCardComponent ]
     })
     .compileComponents();
   }));

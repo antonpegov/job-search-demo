@@ -1,15 +1,16 @@
-.section
-  mat-toolbar.header(color="primary")
-    span.title Active jobs
-    span.spacer
-    button(mat-icon-button)
-      span.title Place
-      mat-icon.icon place
-    button(mat-icon-button)
-      span.title Filter
-      mat-icon.icon filter_list
+.section.jobs
   .row
-    .col-md-6.col-sm-12
-      app-job-list
-    .col-md-6.col-sm-12
-      app-job-info
+    mat-toolbar.jobs-header(color="primary")
+      span.title Active jobs
+      span.spacer
+      button(mat-icon-button, title="under construction")
+        span.title Place
+        mat-icon.icon place
+      button(mat-icon-button, title="under construction")
+        span.title Filter
+        mat-icon.icon filter_list
+  .row.jobs-body
+    .col-lg-6.col-md-4.col-sm-12
+      app-job-list(#JobList)
+    .col-lg-6.col-md-8.col-sm-12
+      app-job-info([job]="JobList.activeJob")

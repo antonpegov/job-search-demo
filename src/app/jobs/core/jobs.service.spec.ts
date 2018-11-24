@@ -59,8 +59,8 @@ describe('JobsService', () => {
   });
 
   it('should be able to get all categories', () => {
-    service.getCategories().subscribe((categories: JobCategory[]) => {
-      expect(categories.length).toBe(4);
+    service.categories.subscribe((categories: Map<string, JobCategory>) => {
+      expect(categories.size).toBe(4);
     });
 
     const req = httpMock.expectOne(_req => _req.method === 'GET' && _req.url === env + 'categories');

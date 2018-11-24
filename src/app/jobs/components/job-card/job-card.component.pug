@@ -1,0 +1,14 @@
+.job-card([class.active]="activeJob.id===card.id")
+  .job-card-thumb
+    .square
+      .circle
+        mat-icon.icon face
+  .job-card-content
+    .job-card-content-title((click)="setActive()", [title]="card.title") {{card.title}}
+    .job-card-content-body(*ngIf="ready")
+      .job-card-content-body-categories
+        .item(*ngFor="let category of card.categories", [title]="categories.get(category.id).name")
+          mat-icon.icon {{categories.get(category.id).icon}}
+          // | {{category.id}}
+      .job-card-content-body-awarded(*ngIf="card.is_awarded", title="awarded")
+        mat-icon.icon grade

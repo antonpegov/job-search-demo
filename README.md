@@ -6,7 +6,7 @@
 
 !!!important!!! ng cli is using to execute some commands, so you should have it installed
 
-1.  Clone repository to your machine with `git clone <repo_url>` and enter to the new created folder 
+1.  Clone repository to your machine with `git clone <repo_url>` and enter the newly created folder 
 
 2.  Call `yarn` to install dependencies
 

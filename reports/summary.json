@@ -21,36 +21,50 @@
             "line": 4,
             "name": "I navigate to jobs page",
             "match": {
-              "location": "e2e\\steps\\JobsPreview.steps.ts:9"
+              "location": "e2e\\steps\\JobsPreview.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4743000000
+              "duration": 1829000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I can see main title",
+            "match": {
+              "location": "e2e\\steps\\JobsPreview.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1085000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "I can see main title",
+            "name": "I can see jobs loaded in the left panel",
             "match": {
-              "location": "e2e\\steps\\JobsPreview.steps.ts:17"
+              "location": "e2e\\steps\\JobsPreview.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 57000000
+              "duration": 2108000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "I can see tooltip in the right panel",
+            "name": "I can see first job loaded in the right panel",
             "match": {
-              "location": "e2e\\steps\\JobsPreview.steps.ts:21"
+              "location": "e2e\\steps\\JobsPreview.steps.ts:20"
             },
             "result": {
-              "status": "pending"
+              "status": "passed",
+              "duration": 46000000
             }
           },
           {
@@ -59,22 +73,23 @@
             "line": 10,
             "name": "I choose second job in the first panel",
             "match": {
-              "location": "e2e\\steps\\JobsPreview.steps.ts:25"
+              "location": "e2e\\steps\\JobsPreview.steps.ts:24"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "I see job details in the second panel",
+            "name": "I see second job details in the second panel",
             "match": {
-              "location": "e2e\\steps\\JobsPreview.steps.ts:29"
+              "location": "e2e\\steps\\JobsPreview.steps.ts:28"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 122000000
             }
           },
           {

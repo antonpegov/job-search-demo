@@ -30,14 +30,14 @@ export class JobsService {
     return this.categoryCache;
   }
 
-  getJobs(filter: JobFilter = {}): Observable<JobData[]> {
+  public getJobs(filter: JobFilter = {}): Observable<JobData[]> {
     return this.$http.get<ApiResponse<JobData>>(env.api + 'jobs', {params: filter as any})
       .pipe(
         map((response: ApiResponse<JobData>) => response.body)
       );
   }
 
-  getPlaces(): Observable<JobPlace[]> {
+  public getPlaces(): Observable<JobPlace[]> {
     return this.$http.get<ApiResponse<JobPlace>>(env.api + 'places')
       .pipe(
         map((response) => response.body)

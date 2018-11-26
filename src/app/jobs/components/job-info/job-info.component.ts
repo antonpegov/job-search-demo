@@ -23,8 +23,8 @@ export class JobInfoComponent implements OnInit, OnChanges {
       this.ready = true;
       this.emitCategories();
     }
-    // console.log('prev value: ', name.previousValue);
-    // console.log('got name: ', name.currentValue);
+    // console.log('prev value: ', job.previousValue);
+    // console.log('got name: ', job.currentValue);
   }
 
   public ngOnInit() {

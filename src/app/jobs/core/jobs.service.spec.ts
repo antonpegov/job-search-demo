@@ -2,7 +2,6 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { JobsService } from './jobs.service';
 import { JobData } from '../types/job-data';
-import { HttpClient } from '@angular/common/http';
 import { environment as env } from '../../../environments/environment';
 import * as jobsJson from '../../../../api/jobs.json';
 import * as categoriesJson from '../../../../api/categories.json';
@@ -37,7 +36,7 @@ describe('JobsService', () => {
       expect(jobs.length).toBe(4);
     });
 
-    const req = httpMock.expectOne(_req => _req.method === 'GET' && _req.url === env + 'jobs');
+    const req = httpMock.expectOne(_req => _req.method === 'GET' && _req.url === env.api + 'jobs');
     req.flush(jobsJson.default);
 
     httpMock.verify();
@@ -48,7 +47,7 @@ describe('JobsService', () => {
       expect(jobs.length).toBe(3);
     });
 
-    const req = httpMock.expectOne(_req => _req.method === 'GET' && _req.url === env + 'jobs');
+    const req = httpMock.expectOne(_req => _req.method === 'GET' && _req.url === env.api + 'jobs');
     req.flush(Object.assign(
       {},
       jobsJson.default,
@@ -63,7 +62,7 @@ describe('JobsService', () => {
       expect(categories.size).toBe(4);
     });
 
-    const req = httpMock.expectOne(_req => _req.method === 'GET' && _req.url === env + 'categories');
+    const req = httpMock.expectOne(_req => _req.method === 'GET' && _req.url === env.api + 'categories');
     req.flush(categoriesJson.default);
 
     httpMock.verify();
@@ -74,7 +73,7 @@ describe('JobsService', () => {
       expect(categories.length).toBe(2);
     });
 
-    const req = httpMock.expectOne(_req => _req.method === 'GET' && _req.url === env + 'places');
+    const req = httpMock.expectOne(_req => _req.method === 'GET' && _req.url === env.api + 'places');
     req.flush(placesJson.default);
 
     httpMock.verify();

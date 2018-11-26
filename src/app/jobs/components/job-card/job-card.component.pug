@@ -2,10 +2,10 @@
   .job-card-thumb
     .square
       .circle
-        mat-icon.icon face
+        mat-icon.icon photo_camera
   .job-card-content
     .job-card-content-title((click)="setActive()", [title]="card.title") {{card.title}}
-    .job-card-content-body(*ngIf="ready")
+    .job-card-content-body(*ngIf="ready|async")
       .job-card-content-body-categories
         .item(*ngFor="let category of card.categories", [title]="categories.get(category.id).name")
           mat-icon.icon {{categories.get(category.id).icon}}
